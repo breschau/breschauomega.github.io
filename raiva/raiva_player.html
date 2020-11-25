@@ -28,18 +28,19 @@ html, body {
     (function (window) {
         function setup(TSC) {
              TSC.playerConfiguration.addMediaSrc("raiva.mp4");
-             TSC.playerConfiguration.setXMPSrc("raiva_config.xml");
+             TSC.playerConfiguration.setXMPSrc("raiva.xml");
              TSC.playerConfiguration.setAutoHideControls(true);
              TSC.playerConfiguration.setBackgroundColor("#000000");
              TSC.playerConfiguration.setCaptionsEnabled(false);
              TSC.playerConfiguration.setSidebarEnabled(false);
              TSC.playerConfiguration.setDisableControls(true);
-             TSC.playerConfiguration.setAutoPlayMedia(true);
-             
+             TSC.playerConfiguration.setAutoPlayMedia(false);
+             TSC.playerConfiguration.setPosterImageSrc("raiva_introdução_etc_e_tal_First_Frame.png");
              TSC.playerConfiguration.setIsSearchable(false);
-             TSC.playerConfiguration.setEndActionType("stop");
-             TSC.playerConfiguration.setEndActionParam("false");
+             TSC.playerConfiguration.setEndActionType("jumptourl");
+             TSC.playerConfiguration.setEndActionParam("https://gbreschau.wixsite.com/website/c%C3%B3pia-nossa-inspira%C3%A7%C3%A3o");
              TSC.playerConfiguration.setAllowRewind(-1);
+             TSC.playerConfiguration.setProcessUnicodeNames(true);
              
 
              TSC.localizationStrings.setLanguage(TSC.languageCodes.ENGLISH);
